@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fcdb183f86.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header" >
+       <div class="container">
+        <nav>
+            <img src="LOGO.png" class="LOGO">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">My Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+       <div class="header-text">
+        <p>Web Developer</p>
+        <h1>Hi, I'm <span>Anamika</span> <br> Porwal from Greater Noida. </h1>
+       </div>
+       </div> 
+    </div>
+    
+
+        <div id="about">
+         <div class="container">
+                   <div class="row">
+                    <div class="about-col-1">
+                        <img src="mm.png" >
+                    </div>
+                    <div class ="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Tech enthusiast with a passion for problem-solving. Aspiring computer science engineer armed with technical prowess 
+                        and exceptional interpersonal skills. Ready to make waves in the world of technology and bring innovation to life.
+                        Join me on this exciting journey of coding, creativity, and endless possibilities!</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                               
+                                <li><span>Web Development</span><br>Website design and develop</li>
+                                <li><span>Data structure and algorithm in java</span><br>Data structures and various algorithms</li>
+                                <li><span>Java development</span><br>Java programming</li>
+                                <li><span>Database management</span><br>Manages database</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents"id="education">
+                            <ul>
+                                <li><span>2020-Current</span><br>B-Tech (Computer Science and engineering)<br>IIMT College of Engineering (Greater Noida).</li>
+                                <li><span>2019-2020</span><br>Intermediate<br>M.S.K Inter College Bharthana(Etawah).</li>
+                                <li><span>2017-2018</span><br>Highschool<br>M.S.K Inter College Bharthana(Etawah).</li>
+                            </ul>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    <!-- ------services------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="services-list">
+                 <div> 
+                    <i class="fa-sharp fa-solid fa-code"></i>
+                    <h2>Web development</h2>
+                    <p>Build,design and maintain the websites.</p>    
+                    <a href="https://www.w3schools.com/whatis/">learn more</a>
+                </div>
+                <div> 
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Data structure and algorithm in java</h2>
+                    <p>data structure to store data items,algorithms for providing techniques for managing this data.</p>
+                    <a href="https://www.geeksforgeeks.org/learn-data-structures-and-algorithms-dsa-tutorial/">learn more</a>
+                </div>
+                <div> 
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Java programming</h2>  
+                    <p>to create java applications and backend-programming.</p>
+                    <a href="https://www.w3schools.com/java/">learn more</a>
+                </div>
+                <div> 
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database management</h2>
+                    <p>To store data and manages data in the database permanently.</p>
+                    <a href="https://www.geeksforgeeks.org/dbms/">learn more</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- portfolio----  -->
+    <div id ="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="fo.jpg">
+                    <div class="layer">
+                        <h3>Food delivery website</h3>
+                        <p>It is an responsive food delivery website with which you can order the food
+                            from your nearby resturants.It is an web development project.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                    
+                </div>
+                <div class="work">
+                    <img src="m1.jpg">
+                    <div class="layer">
+                        <h3>Online otp and password generator</h3>
+                        <p>It is an core java project with which you can generate otp
+                             and password for login and registration in websites.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="pdfff.jpg">
+                    <div class="layer">
+                        <h3>Pdf splitter</h3>
+                        <p>It is an core java project with which split the pdf in to different pdfs.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div> 
+           <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!---contact-- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>porwalanamika0907@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>9354479289</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/ana.gupta.9674"><i class="fa-brands fa-facebook"></i></a>  
+                    <a href="https://twitter.com/anami2411"><i class="fa-brands fa-twitter"></i></i></a>  
+                    <a href="https://www.instagram.com/accounts/edit/"><i class="fa-brands fa-instagram"></i></i></a>  
+                    <a href="https://www.linkedin.com/in/anamika-porwal-773010229/"><i class="fa-brands fa-linkedin"></i></a>      
+                       </div>
+                       <a href="my resume.pdf"download class="btn btn2">Download resume</a>
+                    </div>
+                <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required >
+                    <input type="email" name="email" placeholder="Your email" required > 
+                    <textarea name ="message" rows="6" placeholder="Your Message" ></textarea>
+                    <button type="Submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+                
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright o made with  <i class="fa-solid fa-heart"></i>portfolio anamika </p>
+        
+    </div>
+</div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab (tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }                                                                                                                                                                                                       
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+        
+    </script>
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwGg0l099Ur2GwEGdPr2rZqdASMqrGkeHDEsAEyWiet7Xtauq_foAWucF5gqwouHxlQKw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg= document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML= ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>  
+</body>
+</html>
